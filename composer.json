@@ -1,0 +1,29 @@
+{
+    "require": {
+        "slim/slim": "^3.0",
+        "doctrine/orm": ">=2.3",
+        "doctrine/migrations": "^1.8",
+        "symfony/console": "^4.1",
+        "symfony/yaml": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Api\\": "api/",
+            "Unit\\": "unit/",
+            "Domain\\": "domain/",
+            "DB\\": "db/",
+            "Repository\\": "repository/"
+        }
+    },
+    "scripts": {
+        "db": "doctrine",
+        "codecept": "codecept",
+        "test": "codecept run",
+        "test-unit": "codecept run unit",
+        "test-api": "codecept run api"
+    },
+    "require-dev": {
+        "herloct/codeception-slim-module": "^1.1",
+        "codeception/codeception": "^2.5"
+    }
+}

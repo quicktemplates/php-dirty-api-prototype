@@ -1,0 +1,11 @@
+actor: ApiTester
+modules:
+    enabled:
+        - Doctrine2:
+            connection_callback: 'em'
+            cleanup: true
+        - \Helper\Api
+        - \Herloct\Codeception\Module\Slim:
+            container: /container.php
+        - REST:
+            depends: \Herloct\Codeception\Module\Slim
