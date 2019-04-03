@@ -13,7 +13,7 @@ framework and Doctrine ORM and Migrations.
 ## Provided and recommended Code Structure
 * `api/` contains first level endpoints (REST resources). example [api/providers.php](api/providers.php)]. Tested in api suit [tests/api/providersCest.php](tests/api/providersCest.php)
 * `domain/` contains domain models (probably they would be Doctrine entities too). example [domain/Provider.php](api/Provider.php)
-* `repository/` contains Doctrine repositories. example [repositories/Providers.php](repositories/Providers.php)
+* `repository/` contains Doctrine repositories. example [repository/Providers.php](repository/Providers.php)
 * `unit/` contains reusable code split into units (name comes from unit testing). tested in unit suit (example to be provided)
 
 ## Usage
