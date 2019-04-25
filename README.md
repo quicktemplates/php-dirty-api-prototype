@@ -20,6 +20,6 @@ framework and Doctrine ORM and Migrations.
 1. Clone this repo
 2. Change configs and required packages to suite your needs
 3. If result of previous step form a generic template on their own,
-please consider submitting that as a project to https://github.com/quicktemplates
+please consider submitting that as a new repo to https://github.com/repo-init
 4. Fill in your project info in composer.json (placeholders denoted with < and >)
 5. Happy coding!
