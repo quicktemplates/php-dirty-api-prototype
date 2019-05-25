@@ -10,17 +10,17 @@ class Providers extends EntityRepository
     public function search($service = null, $name = null, $limit = 20, $offset = 0)
     {
         $qb = $this->createQueryBuilder('p');
-		$params = [];
+	$params = [];
 
-        if ($service) {
-			$qb = $qb->where('service like :service');
-			$params['service'] = "%$service%";
-		}
-		if ($name) {
-			$qb = $qb->where('name like :name');
-			$params['name'] = "%$name%";
-		}
+	if ($service) {
+		$qb = $qb->where('service like :service');
+		$params['service'] = "%$service%";
+	}
+	if ($name) {
+		$qb = $qb->where('name like :name');
+		$params['name'] = "%$name%";
+	}
 
-		return $qb->getQuery()->execute($params);
+	return $qb->getQuery()->execute($params);
     }
 }
